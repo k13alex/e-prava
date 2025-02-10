@@ -23,7 +23,8 @@ $containerWidth: 120rem;
 
 :root {
   // base
-  --font-family: "", sans-serif;
+  --font-family: "Inter", sans-serif;
+  --font-family-title: "Oswald", sans-serif;
   --font-weight: 400;
   --content-width: 117rem;
   --container-offset: 1.5rem;
@@ -42,6 +43,7 @@ $containerWidth: 120rem;
 body {
   font-size: 1.6rem;
   color: var(--clr-default-400);
+  background-color: rgb(41, 41, 41);
 
   &.lock {
     position: fixed;
@@ -52,6 +54,10 @@ body {
     height: 100vh;
     overscroll-behavior: none;
   }
+}
+
+* {
+  user-select: none;
 }
 
 .wrapper {
@@ -106,17 +112,22 @@ main {
 @import "./components/ui/menu";
 @import "./components/ui/logo";
 @import "./components/ui/burger";
+@import "./components/ui/hero-header";
+@import "./components/ui/hero-footer";
 
 // Components - UI
 
 // Components - Common
 @import "./components/common/header";
 @import "./components/common/footer";
+@import "./components/common/modal";
 
 // Components - Common
 
 // Components - Pages
 @import "./components/pages/index/hero";
+
+@import "./components/pages/thank/thank";
 
 // Components - Pages
 

@@ -1,6 +1,301 @@
 <section class="hero">
-  <div class="container">
-    <div class="hero__wrapper">
+  <!-- Slider main container -->
+  <div class="swiper heroPage hero__swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide hero-slide hero-slide_1">
+        <div class="hero-slide__content">
+          @include("../../ui/hero-header.html")
+          <div class="hero-slide__body">
+            <h1 class="title">НА ВАС СКЛАЛИ ПРОТОКОЛ ЗА СТ 130 КУпАП?</h1>
+            <h2 class="title">ШВИДКО ПОВЕРНУ ВАШІ ПРАВА. ДЗВОНІТЬ!</h2>
+            <div class="text">
+              Маю напрацьовану з 2015 методику повернення прав, виграшу суду та
+              стягнення витрат з держави.
+            </div>
+            <div class="text text_orange">88% виграних справ!</div>
+            <iframe
+              title="Video"
+              width="320"
+              height="250"
+              src="https://www.youtube.com/embed/Lnzjnf_ID6M?autoplay=1&amp;mute=1&amp;playlist=Lnzjnf_ID6M&amp;loop=1"
+              allow="autoplay; encrypted-media"
+              allowfullscreen=""
+            ></iframe>
+            <button
+              data-modal-target="#modal-starter"
+              class="btn-primary btn-primary_margin"
+            >
+              Отримати консультацію! >
+            </button>
+          </div>
+          @include("../../ui/hero-footer.html")
+        </div>
+      </div>
+      <div class="swiper-slide hero-slide hero-slide_2">
+        <div class="hero-slide__content">
+          <div class="hero-slide__bg-circle"></div>
+          @include("../../ui/hero-header.html")
+          <div class="hero-slide__body">
+            <h2 class="title">ЯКІ ДЛЯ ВАС НАСЛІДКИ ПО СТАТТІ 130 КУПАП?</h2>
+            <ul class="list-star">
+              <li class="text">Штраф 17ʼ000 грн.</li>
+              <li class="text">Позбавлення прав на 1 рік.</li>
+              <li class="text">
+                Обов'язкова повторна перездача на права з випробувальним
+                терміном 2 роки.
+              </li>
+              <li class="text">
+                Ви будете в "базі", і Вас постійно зупинятимуть.
+              </li>
+            </ul>
+            <h2 class="title title_red">
+              ЗГОДНІ, ЩО ЦЕ ПРОСТО НЕЙМОВІРНИЙ ГОЛОВНЯК?
+            </h2>
+            <img
+              src="./img/arrow-to-down.svg"
+              width="27"
+              height="82"
+              alt="Arrow"
+              loading="lazy"
+              aria-hidden="true"
+              class="hero-slide__arrow-to-down"
+            />
+            <button class="btn-primary" data-modal-target="#modal-creatium">
+              Що робити?
+            </button>
+          </div>
+          @include("../../ui/hero-footer.html")
+        </div>
+      </div>
+      <div class="swiper-slide hero-slide hero-slide_3">
+        <div class="hero-slide__content">
+          <div class="hero-slide__bg-img"></div>
+          @include("../../ui/hero-header.html")
+          <div class="hero-slide__body">
+            <h2 class="title">ЩО РОБИТИ?</h2>
+            <ul class="list-num">
+              <li>
+                <span class="list-num__number">01</span>
+                <span class="text">
+                  Прийняти і усвідомити той факт, що система безжалісна і суд
+                  неминучий, подобається вам це чи ні.
+                </span>
+              </li>
+              <li>
+                <span class="list-num__number">02</span>
+                <span class="text">
+                  Прийняти рішення вирішувати проблему, чи і далі шукати "авось
+                  домовлюсь" рішення, як це вже було "авось не зупинять" -
+                  зупинили.
+                </span>
+              </li>
+              <li>
+                <span class="list-num__number">03</span>
+                <span class="text">
+                  Обрати адвоката, що має успішний досвід подібних справ, та
+                  сформувати з ним виграшну стратегію.
+                </span>
+              </li>
+              <li>
+                <span class="list-num__number">04</span>
+                <span class="text">
+                  Ознайомити адвоката з протоколом справи та знайти "проколи"
+                  поліції при його оформленні.
+                </span>
+              </li>
+              <li>
+                <span class="list-num__number">05</span>
+                <span class="text">
+                  Адвокат в суді (дистанційно, без Вашої участі) доведе Вашу
+                  невинуватість та незаконність дій поліції.
+                </span>
+              </li>
+              <li>
+                <span class="list-num__number">06</span>
+                <span class="text">
+                  Забрати права, скасувати штраф та стягнути витрати на адвоката
+                  з держави (так-так, це цілком реально!)
+                </span>
+              </li>
+            </ul>
+            <button class="btn-primary" data-modal-target="#modal-creatium">
+              Я усвідомлюю, що мені потрібен адвокат
+            </button>
+          </div>
+          @include("../../ui/hero-footer.html")
+        </div>
+      </div>
+      <div class="swiper-slide hero-slide hero-slide_4">
+        <div class="hero-slide__content">
+          @include("../../ui/hero-header.html")
+          <div class="hero-slide__body">
+            <h2 class="title">В ЧОМУ МОЖЕ БУТИ "ПРОКОЛ" ПОЛІЦІЇ?</h2>
+            <div class="text text_alert hero-slide__important">
+              Складений на Вас протокол 130 не є вироком!
+            </div>
+            <div class="text text_left">
+              Для проведення ЗАКОННОГО огляду на стан спʼяніння необхідно:
+            </div>
+            <ul class="list-star">
+              <li class="text">Законна зупинка авто</li>
+              <li class="text">Поз'яснення особі її прав</li>
+              <li class="text">Відеофіксація від початку зупинки</li>
+              <li class="text">Виявлення поліцією ознак сп'яніння</li>
+              <li class="text">Наявність факту керування особою авто</li>
+            </ul>
+            <div class="text text_alert hero-slide__important">
+              Загалом, таких (!) НЮАНСІВ 50+
+              <img
+                src="./img/face_screaming_in_fear.webp"
+                width="37"
+                height="37"
+                alt="В ЧОМУ МОЖЕ БУТИ ПРОКОЛ ПОЛІЦІЇ?"
+                loading="lazy"
+                aria-hidden="true"
+                class="hero-slide__important-img"
+              />
+            </div>
+            <div class="text text_left">
+              У разі відсутності хоча б однієї складової, в суді можна успішно
+              вести мову про незаконність притягнення Вас до відповідальності за
+              130 статтею!
+            </div>
+            <div class="text text_bold">
+              Хочете дізнатись детальніше про адвоката, що поверне Ваші права?
+            </div>
+            <button class="btn-primary btn-primary_margin swiperNextSlide">
+              Про адвоката
+            </button>
+            <div class="hero-slide__bg-img-robert"></div>
+          </div>
+
+          @include("../../ui/hero-footer.html")
+        </div>
+      </div>
+      <div class="swiper-slide hero-slide hero-slide_5">
+        <div class="hero-slide__content">
+          <div class="hero-slide__bg-prasolov"></div>
+          <div
+            class="hero-slide__bg-circle hero-slide__bg-circle_prasolov"
+          ></div>
+          @include("../../ui/hero-header.html")
+          <div class="hero-slide__body">
+            <h2 class="title">ПРО АДВОКАТА</h2>
+            <ul class="list-star">
+              <li class="text text_bold">88% рішень на користь клієнта!</li>
+              <li class="text">9 років успішної практики по ст 130 КУпАП</li>
+              <li class="text">400+ виграних справ</li>
+              <li class="text">
+                індивідуальні пакети послуг під кожен запит клієнта
+              </li>
+              <li class="text">
+                конфіденційність, порядність та пріоритет Ваших інтересів
+              </li>
+            </ul>
+            <div class="hero-slide__name">ІГОР ПРАСОЛОВ</div>
+            <div class="text text_left">
+              Лущить справи по 130-й, як горішки, та розвалює позицію
+              звинувачення в суді за 20 хв.
+            </div>
+            <h2 class="title title_red">ДАВАЙТЕ ПОВЕРНУ ВАМ ПРАВА?</h2>
+            <img
+              src="./img/arrow_3.svg"
+              width="56"
+              height="48"
+              alt="Arrow"
+              loading="lazy"
+              aria-hidden="true"
+              class="hero-slide__arrow-right"
+            />
+            <button class="btn-primary btn-primary_margin swiperNextSlide">
+              Подати заявку на повернення прав
+            </button>
+          </div>
+          @include("../../ui/hero-footer.html")
+        </div>
+      </div>
+      <div class="swiper-slide hero-slide hero-slide_6">
+        <div class="hero-slide__content">
+          <div class="hero-slide__form-prasolov"></div>
+          @include("../../ui/hero-header.html")
+          <div class="hero-slide__body">
+            <h2 class="title">
+              ЗАЯВКА НА <br />
+              ПОВЕРНЕННЯ ПРАВ
+            </h2>
+            <div class="text">
+              Залиште Ваші контакти прямо зараз та отримайте
+              <span class="text text_orange">знижку 50%!</span>
+            </div>
+            <div class="hero-slide__countdown">
+              <div class="hero-slide__countdown-text">
+                <div class="hero-slide__countdown-relative">
+                  до кінця <br />
+                  акції
+                  <img
+                    src="./img/arrow-form.svg"
+                    width="26"
+                    height="30"
+                    alt="Arrow"
+                    loading="lazy"
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
+              <div data-countdown class="countdown"></div>
+            </div>
+
+            <div class="hero-slide__form">
+              <form class="form">
+                <div>
+                  <label for="sliderName"> Введіть ім'я </label>
+                  <input type="text" id="sliderName" name="sliderName" />
+                </div>
+                <div>
+                  <label for="sliderTel"> Введіть телефон * </label>
+                  <input
+                    type="tel"
+                    id="sliderTel"
+                    name="sliderTel"
+                    placeholder="+380"
+                  />
+                </div>
+
+                <button class="btn-primary">
+                  Повернути права зі знижкою 50%
+                </button>
+              </form>
+            </div>
+          </div>
+          @include("../../ui/hero-footer.html")
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev hero__nav">
+      <img
+        src="./img/chevron_left_icon.svg"
+        width="20"
+        height="20"
+        alt="arrow"
+        loading="lazy"
+        aria-hidden="true"
+      />
+    </div>
+    <div class="swiper-button-next hero__nav">
+      <img
+        src="./img/chevron_right_icon.svg"
+        width="20"
+        height="20"
+        alt="arrow"
+        loading="lazy"
+        aria-hidden="true"
+      />
     </div>
   </div>
 </section>

@@ -4,11 +4,13 @@
 import "./_vendor";
 
 // Functions
-import { mobileCheck } from "./functions/";
+import { modals, swiperInit, updateTimer } from "./functions/";
 
 // Components
 // import { formValidation } from "./components/";
 
 window.addEventListener("DOMContentLoaded", () => {
-  mobileCheck();
+  swiperInit();
+  updateTimer();
+  modals();
 });

@@ -1,0 +1,34 @@
+.hero-header {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 3rem;
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2rem;
+    font-size: 1.4rem;
+    color: var(--clr-default-100);
+    gap: 1rem;
+  }
+
+  &__reverse {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes slidemem {
+  0% {
+    left: -10%;
+    margin-left: 0px;
+  }
+  40% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}

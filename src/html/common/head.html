@@ -1,30 +1,212 @@
 <!-- Разные метатеги -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- Предзагрузка шрифтов -->
-<!-- <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin> -->
+<link
+  rel="preload"
+  href="fonts/Inter-Black.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Inter-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Inter-ExtraBold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Inter-ExtraLight.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Inter-Light.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Inter-Medium.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Inter-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Inter-SemiBold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Inter-Thin.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Oswald-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Oswald-ExtraLight.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Oswald-Light.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Oswald-Medium.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Oswald-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Oswald-SemiBold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
 
-<!-- Фавиконка -->
+<!-- гугл аналитика  -->
+<!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-1WC87MJ4MZ"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "G-1WC87MJ4MZ");
+</script>
 
-<!-- SEO и отображение ссылки в соц. сетях -->
-<!-- <meta property="og:locale" content="ru_RU">
-<meta property="og:type" content="website">
-<meta property="og:title" content="">
-<meta property="og:site_name" content="">
-<meta property="og:url" content="">
-<meta property="og:description" content="">
-<meta property="og:image" content="">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:image:src" content=""> -->
+<!-- колтрекинг -->
+<script>
+  (function (d, w, s) {
+    var widgetHash = "xwqw1rnvmpf8hok1cqxt",
+      ctw = d.createElement(s);
+    ctw.type = "text/javascript";
+    ctw.async = true;
+    ctw.src =
+      "//widgets.binotel.com/calltracking/widgets/" + widgetHash + ".js";
+    var sn = d.getElementsByTagName(s)[0];
+    sn.parentNode.insertBefore(ctw, sn);
+  })(document, window, "script");
+</script>
+
+<!-- геткол -->
+<script>
+  (function (d, w, s) {
+    var widgetHash = "hz705f83u39t1rzg72g4",
+      gcw = d.createElement(s);
+    gcw.type = "text/javascript";
+    gcw.async = true;
+    gcw.src = "//widgets.binotel.com/getcall/widgets/" + widgetHash + ".js";
+    var sn = d.getElementsByTagName(s)[0];
+    sn.parentNode.insertBefore(gcw, sn);
+  })(document, window, "script");
+</script>
+
+<!-- подтверждение домена для фб -->
+<meta
+  name="facebook-domain-verification"
+  content="6huejusuoo7upchkjq3kcffg29fi5s"
+/>
+
+<!-- пиксель фб -->
+<!-- Meta Pixel Code -->
+<script>
+  !(function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = "2.0";
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s);
+  })(
+    window,
+    document,
+    "script",
+    "https://connect.facebook.net/en_US/fbevents.js"
+  );
+  fbq("init", "1739929132980305");
+  fbq("track", "PageView");
+</script>
+<!-- <noscript
+  ><img
+    height="1"
+    width="1"
+    style="display: none"
+    src="https://www.facebook.com/tr?id=1739929132980305&ev=PageView&noscript=1"
+/></noscript> -->
+<!-- End Meta Pixel Code -->
 
 <!-- Подключение стилей -->
-<link rel="stylesheet" href="css/style.css">
-
-<!-- Предзагрузка Гугл карт -->
-<!-- <link rel="preconnect" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.4018799759515!2d37.59706970147697!3d48.850546522813026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40df9b278acf10c7%3A0x6df4ea59608755a2!2z0YPQuy4g0JHQsNC90LrQvtCy0YHQutCw0Y8sIDk1LCDQodC70LDQstGP0L3RgdC6LCDQlNC-0L3QtdGG0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA4NDEyMg!5e0!3m2!1sru!2sua!4v1603604697125!5m2!1sru!2sua" crossorigin=""> -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<!-- <link rel="preload" href="css/style.css" /> -->
+<link
+  rel="preload"
+  href="css/style.css"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+/>
+<noscript><link rel="stylesheet" href="css/style.css" /></noscript>
 
 <!-- Подключений скриптов -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script defer src="js/script.js"></script>

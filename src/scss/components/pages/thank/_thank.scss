@@ -1,0 +1,25 @@
+.thank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(252, 245, 237);
+  gap: 3rem;
+
+  &__title {
+    font-family: var(--font-family-title);
+    font-weight: 700;
+    font-size: fluid(6.4rem, 4rem);
+    text-align: center;
+  }
+
+  .text {
+    font-size: fluid(1.6rem, 1.4rem);
+    color: var(--clr-default-900);
+  }
+
+  .btn-primary {
+    max-width: 32rem;
+  }
+}

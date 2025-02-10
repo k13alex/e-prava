@@ -1,4 +1,4 @@
-$overlayBgColor: hsl(0deg 0% 50%);
+$overlayBgColor: rgba(0, 0, 0, 0.7);
 
 .modal {
   position: fixed;
@@ -23,10 +23,11 @@ $overlayBgColor: hsl(0deg 0% 50%);
 
   &__content {
     position: relative;
-    padding: 2rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
     width: 100%;
-    max-width: 80rem;
-    background-color: var(--clr-default-100);
+    max-width: 41rem;
+    background-color: rgb(252, 245, 237);
     opacity: 0;
     transform: translateY(-100%);
     transition: transform var(--transition), opacity var(--transition);
@@ -34,10 +35,16 @@ $overlayBgColor: hsl(0deg 0% 50%);
 
   &__close {
     position: absolute;
-    right: 0.2rem;
-    top: 0.2rem;
-    width: 2rem;
-    height: 2rem;
+    right: 0rem;
+    top: 0rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: var(--clr-default-900);
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--clr-default-100);
+    transform: translate(50%, -50%);
 
     &::after,
     &::before {
@@ -45,7 +52,7 @@ $overlayBgColor: hsl(0deg 0% 50%);
       position: absolute;
       left: 50%;
       top: 50%;
-      width: 100%;
+      width: 60%;
       height: 0.2rem;
       background-color: var(--clr-default-900);
     }
@@ -68,6 +75,54 @@ $overlayBgColor: hsl(0deg 0% 50%);
       opacity: 1;
       transform: translateY(0);
       transition: transform var(--transition), opacity var(--transition);
+    }
+  }
+
+  &-creatium {
+    &__title {
+      font-family: var(--font-family-title);
+      text-align: center;
+    }
+
+    &__text {
+      margin-top: 1rem;
+      padding-inline: 0.5rem;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 1.6;
+      text-align: center;
+      color: #333;
+
+      span {
+        font-weight: 700;
+        color: rgb(199, 67, 82);
+      }
+    }
+
+    .countdown {
+      & > div {
+        & > span {
+          color: var(--clr-default-900);
+        }
+      }
+    }
+
+    .hero-slide__countdown-text {
+      color: var(--clr-default-900);
+      transform: translate(0rem, -60%);
+    }
+
+    &__form {
+      margin-top: 3rem;
+
+      &::after {
+        content: "";
+        display: flex;
+        margin-block: 1rem;
+        width: 100%;
+        height: 0.1rem;
+        background-color: rgba(0, 0, 0, 0.05);
+      }
     }
   }
 }

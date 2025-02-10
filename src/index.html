@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
-    <title>Gulp starter V3</title>
-    <meta name="description" lang="ru" content="Описание сайта" />
+    <title>Адвокат, що поверне Вам права за ст 130 КУпАП</title>
+    <meta
+      name="description"
+      content="Лущить справи по 130-й як горішки та розвалює позицію звинувачення в суді за 20 хв. 88% виграних справ!"
+    />
 
     @include("html/common/head.html")
   </head>
 
   <body>
     <div class="wrapper" data-overlay="false">
-      @include("html/common/header.html")
+      <!-- @include("html/common/header.html") -->
       <main>@include("html/pages/index/hero.html")</main>
-      @include("html/common/footer.html")
+      <!-- @include("html/common/footer.html") -->
+      @include("html/common/modal-starter.html")
+      @include("html/common/modal.html")
     </div>
   </body>
 </html>
